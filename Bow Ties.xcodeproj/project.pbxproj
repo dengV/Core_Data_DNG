@@ -10,7 +10,7 @@
 		23C6B5F2206C8E3200F4B451 /* Bowtie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6B5EF206C8E3200F4B451 /* Bowtie+CoreDataProperties.swift */; };
 		23C6B5F3206C8E3200F4B451 /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23C6B5F0206C8E3200F4B451 /* SampleData.plist */; };
 		23C6B5F4206C8E3200F4B451 /* Bowtie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6B5F1206C8E3200F4B451 /* Bowtie+CoreDataClass.swift */; };
-		23C6B5F9206C91B800F4B451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6B5F6206C91B800F4B451 /* ViewController.swift */; };
+		23C6B5F9206C91B800F4B451 /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6B5F6206C91B800F4B451 /* ViewControllerOne.swift */; };
 		23D0158A206C8B5300F28738 /* ViewControllerTie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D01589206C8B5200F28738 /* ViewControllerTie.swift */; };
 		FEA6248E1D6A54FA0011CF8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6248D1D6A54FA0011CF8F /* AppDelegate.swift */; };
 		FEA624931D6A54FA0011CF8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA624911D6A54FA0011CF8F /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 		23C6B5EF206C8E3200F4B451 /* Bowtie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bowtie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		23C6B5F0206C8E3200F4B451 /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
 		23C6B5F1206C8E3200F4B451 /* Bowtie+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bowtie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		23C6B5F6206C91B800F4B451 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23C6B5F6206C91B800F4B451 /* ViewControllerOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerOne.swift; sourceTree = "<group>"; };
 		23D01589206C8B5200F28738 /* ViewControllerTie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTie.swift; sourceTree = "<group>"; };
 		FEA6248A1D6A54FA0011CF8F /* Bow Ties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bow Ties.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA6248D1D6A54FA0011CF8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		23C6B5F5206C91B800F4B451 /* ChapterOne */ = {
 			isa = PBXGroup;
 			children = (
-				23C6B5F6206C91B800F4B451 /* ViewController.swift */,
+				23C6B5F6206C91B800F4B451 /* ViewControllerOne.swift */,
 			);
 			path = ChapterOne;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C6B5F9206C91B800F4B451 /* ViewController.swift in Sources */,
+				23C6B5F9206C91B800F4B451 /* ViewControllerOne.swift in Sources */,
 				23D0158A206C8B5300F28738 /* ViewControllerTie.swift in Sources */,
 				23C6B5F4206C8E3200F4B451 /* Bowtie+CoreDataClass.swift in Sources */,
 				FEA624961D6A54FA0011CF8F /* Bow_Ties.xcdatamodeld in Sources */,

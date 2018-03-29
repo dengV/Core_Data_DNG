@@ -182,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="-1842" y="1136"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller One-->
         <scene sceneID="oEw-BP-KfN">
             <objects>
-                <viewController id="PQ2-YK-TLm" customClass="ViewController" customModule="HitList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PQ2-YK-TLm" customClass="ViewControllerOne" customModule="Bow_Ties" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rvg-gM-bt2"/>
                         <viewControllerLayoutGuide type="bottom" id="498-zY-mnc"/>

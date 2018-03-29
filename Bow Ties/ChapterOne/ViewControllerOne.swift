@@ -23,7 +23,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController {
+class ViewControllerOne: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   var people: [NSManagedObject] = []
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension ViewController: UITableViewDataSource {
+extension ViewControllerOne: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView,
                  numberOfRowsInSection section: Int) -> Int {
