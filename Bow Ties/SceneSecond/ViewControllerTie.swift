@@ -21,7 +21,10 @@ class ViewControllerTie: UIViewController {
   // MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
+      else {
+        return
+    }
     managedContext = appDelegate.persistentContainer.viewContext
     insertSampleData()
     
