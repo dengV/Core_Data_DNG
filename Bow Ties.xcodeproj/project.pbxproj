@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		23765F3C206CAA000011A053 /* ViewControllerDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23765F3B206CAA000011A053 /* ViewControllerDog.swift */; };
 		23765F3E206CBA070011A053 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23765F3D206CBA070011A053 /* CoreDataStack.swift */; };
+		23765F41206CBFD50011A053 /* DogWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23765F3F206CBFD50011A053 /* DogWalk.xcdatamodeld */; };
 		23C6B5F2206C8E3200F4B451 /* Bowtie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6B5EF206C8E3200F4B451 /* Bowtie+CoreDataProperties.swift */; };
 		23C6B5F3206C8E3200F4B451 /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23C6B5F0206C8E3200F4B451 /* SampleData.plist */; };
 		23C6B5F4206C8E3200F4B451 /* Bowtie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6B5F1206C8E3200F4B451 /* Bowtie+CoreDataClass.swift */; };
 		23C6B5F9206C91B800F4B451 /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C6B5F6206C91B800F4B451 /* ViewControllerOne.swift */; };
 		23D0158A206C8B5300F28738 /* ViewControllerTie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D01589206C8B5200F28738 /* ViewControllerTie.swift */; };
+		23FF8D08206CC7C5000E59BA /* Walk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF8D04206CC7C5000E59BA /* Walk+CoreDataProperties.swift */; };
+		23FF8D09206CC7C5000E59BA /* Walk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF8D05206CC7C5000E59BA /* Walk+CoreDataClass.swift */; };
+		23FF8D0A206CC7C5000E59BA /* Dog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF8D06206CC7C5000E59BA /* Dog+CoreDataProperties.swift */; };
+		23FF8D0B206CC7C5000E59BA /* Dog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF8D07206CC7C5000E59BA /* Dog+CoreDataClass.swift */; };
 		FEA6248E1D6A54FA0011CF8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6248D1D6A54FA0011CF8F /* AppDelegate.swift */; };
 		FEA624931D6A54FA0011CF8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA624911D6A54FA0011CF8F /* Main.storyboard */; };
 		FEA624961D6A54FA0011CF8F /* Bow_Ties.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEA624941D6A54FA0011CF8F /* Bow_Ties.xcdatamodeld */; };
@@ -24,11 +29,16 @@
 /* Begin PBXFileReference section */
 		23765F3B206CAA000011A053 /* ViewControllerDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDog.swift; sourceTree = "<group>"; };
 		23765F3D206CBA070011A053 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		23765F40206CBFD50011A053 /* DogWalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogWalk.xcdatamodel; sourceTree = "<group>"; };
 		23C6B5EF206C8E3200F4B451 /* Bowtie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bowtie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		23C6B5F0206C8E3200F4B451 /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
 		23C6B5F1206C8E3200F4B451 /* Bowtie+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bowtie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		23C6B5F6206C91B800F4B451 /* ViewControllerOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerOne.swift; sourceTree = "<group>"; };
 		23D01589206C8B5200F28738 /* ViewControllerTie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTie.swift; sourceTree = "<group>"; };
+		23FF8D04206CC7C5000E59BA /* Walk+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23FF8D05206CC7C5000E59BA /* Walk+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23FF8D06206CC7C5000E59BA /* Dog+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23FF8D07206CC7C5000E59BA /* Dog+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FEA6248A1D6A54FA0011CF8F /* Bow Ties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bow Ties.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA6248D1D6A54FA0011CF8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEA624921D6A54FA0011CF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,8 +62,10 @@
 		23765F3A206CAA000011A053 /* Scene_Three_Dog */ = {
 			isa = PBXGroup;
 			children = (
+				23FF8D03206CC7C5000E59BA /* DataModel */,
 				23765F3B206CAA000011A053 /* ViewControllerDog.swift */,
 				23765F3D206CBA070011A053 /* CoreDataStack.swift */,
+				23765F3F206CBFD50011A053 /* DogWalk.xcdatamodeld */,
 			);
 			path = Scene_Three_Dog;
 			sourceTree = "<group>";
@@ -75,6 +87,17 @@
 				23D01589206C8B5200F28738 /* ViewControllerTie.swift */,
 			);
 			path = SceneSecond;
+			sourceTree = "<group>";
+		};
+		23FF8D03206CC7C5000E59BA /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				23FF8D04206CC7C5000E59BA /* Walk+CoreDataProperties.swift */,
+				23FF8D05206CC7C5000E59BA /* Walk+CoreDataClass.swift */,
+				23FF8D06206CC7C5000E59BA /* Dog+CoreDataProperties.swift */,
+				23FF8D07206CC7C5000E59BA /* Dog+CoreDataClass.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		FEA624811D6A54FA0011CF8F = {
@@ -186,7 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FF8D0A206CC7C5000E59BA /* Dog+CoreDataProperties.swift in Sources */,
 				23C6B5F9206C91B800F4B451 /* ViewControllerOne.swift in Sources */,
+				23765F41206CBFD50011A053 /* DogWalk.xcdatamodeld in Sources */,
+				23FF8D09206CC7C5000E59BA /* Walk+CoreDataClass.swift in Sources */,
+				23FF8D0B206CC7C5000E59BA /* Dog+CoreDataClass.swift in Sources */,
+				23FF8D08206CC7C5000E59BA /* Walk+CoreDataProperties.swift in Sources */,
 				23D0158A206C8B5300F28738 /* ViewControllerTie.swift in Sources */,
 				23C6B5F4206C8E3200F4B451 /* Bowtie+CoreDataClass.swift in Sources */,
 				FEA624961D6A54FA0011CF8F /* Bow_Ties.xcdatamodeld in Sources */,
@@ -380,6 +408,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		23765F3F206CBFD50011A053 /* DogWalk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23765F40206CBFD50011A053 /* DogWalk.xcdatamodel */,
+			);
+			currentVersion = 23765F40206CBFD50011A053 /* DogWalk.xcdatamodel */;
+			path = DogWalk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		FEA624941D6A54FA0011CF8F /* Bow_Ties.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
