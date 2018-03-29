@@ -21,7 +21,8 @@ class ViewController: UIViewController {
   // MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    managedContext = appDelegate.persistentContainer.viewContext
     insertSampleData()
     
     let request: NSFetchRequest<Bowtie> = Bowtie.fetchRequest()

@@ -8,12 +8,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
+    /*
     guard let vc = window?.rootViewController as? ViewController else {
       return true
     }
     
-    vc.managedContext = persistentContainer.viewContext
+   vc.managedContext = persistentContainer.viewContext*/
     
     return true
   }
