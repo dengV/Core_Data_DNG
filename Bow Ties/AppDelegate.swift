@@ -7,6 +7,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   
+  lazy var coreDataStack = CoreDataStack(modelName: "Dog_Walk")
+  
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     /*
     guard let vc = window?.rootViewController as? ViewController else {
@@ -22,7 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     self.saveContext()
+    coreDataStack.savaContext()
   }
+  
+  func applicationDidEnterBackground(_ application: UIApplication) {
+    coreDataStack.savaContext()
+  }
+  
   
   // MARK: - Core Data stack
   lazy var persistentContainer: NSPersistentContainer = {

@@ -2,6 +2,10 @@
 
 import UIKit
 
+//
+import CoreData
+
+
 class ViewControllerDog: UIViewController {
 
   // MARK: - Properties
@@ -12,6 +16,8 @@ class ViewControllerDog: UIViewController {
     return formatter
   }()
 
+  var managedContext: NSManagedObjectContext!
+  
   var walks: [Date] = []
 
   // MARK: - IBOutlets
@@ -21,6 +27,11 @@ class ViewControllerDog: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    guard let app_delegate = UIApplication.shared.delegate as? AppDelegate else {
+      return
+    }
+    managedContext = app_delegate.coreDataStack.managedContext
+    
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
   }
 }
