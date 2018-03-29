@@ -3,7 +3,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController {
+class ViewControllerTie: UIViewController {
   
   // MARK: - IBOutlets
   @IBOutlet weak var segmentedControl: UISegmentedControl!
