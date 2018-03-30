@@ -107,13 +107,21 @@ Feel free to switch back and forth between the two editor styles. You might find
 
 
 > /* if let dog = currentDog, let walks = dog.walks?.mutableCopy() as?    NSMutableOrderedSet {
+
 > **            walks.add( walk)
+
 > **          dog.walks = walks
+
 > **                do{
+
 > **                   try managedContext.save()
+
 > **                }catch let error as NSError{
+
 > **                    print("Save error: \(error), description: \(error.userInfo)")
+
 > **                }
+
 > }*/
 
 
