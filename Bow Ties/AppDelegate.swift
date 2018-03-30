@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
   lazy var coreDataStack = CoreDataStack(modelName: "DogWalk")
-  
+  let dataAssist = JSONParser()
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     /*
@@ -26,10 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Saves changes in the application's managed object context before the application terminates.
     self.saveContext()
     coreDataStack.savaContext()
+    dataAssist.coreDataStack.saveContext()
   }
   
   func applicationDidEnterBackground(_ application: UIApplication) {
     coreDataStack.savaContext()
+    dataAssist.coreDataStack.saveContext()
   }
   
   
