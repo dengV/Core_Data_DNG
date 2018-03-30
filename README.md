@@ -176,7 +176,31 @@ Feel free to switch back and forth between the two editor styles. You might find
 ### NSFetchRequest: the star of the show
 
 
+<hr>
 
+
+# Chapter 4:  Visual Panel Tip
+
+Open Bubble_Tea_Finder.xcdatamodeld and long-click the Add Entity button:
+
+
+
+
+<img src="ImgCollect/fetchIt.png">
+
+
+
+
+
+> 长按就出来啦
+
+Select Add Fetch Request from the menu. This will create a new fetch request on the left-side bar and take you to a special fetch request editor:
+
+
+
+> Note: You can click on the newly created fetch request on the left-hand sidebar to change its name.
+
+You can make your fetch request as general or as specific as you want using the visual tool in Xcode’s data model editor. To start, create a fetch request that retrieves all Venue objects from the persistent store.
 
 
 

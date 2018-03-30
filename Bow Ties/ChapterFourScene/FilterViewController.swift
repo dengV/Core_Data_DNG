@@ -1,6 +1,11 @@
 
 import UIKit
 
+//
+
+import CoreData
+
+
 class FilterViewController: UITableViewController {
 
   @IBOutlet weak var firstPriceCategoryLabel: UILabel!
@@ -24,6 +29,17 @@ class FilterViewController: UITableViewController {
   @IBOutlet weak var distanceSortCell: UITableViewCell!
   @IBOutlet weak var priceSortCell: UITableViewCell!
 
+  
+  var coreDataStack: TeaCoreDataStack!
+  
+  
+  lazy var cheapVenuePredicate: NSPredicate = {
+    return NSPredicate(format: "%K == %@", #keyPath(Venue.priceInfo.priceCategory), "$")
+      }()
+  
+  
+  
+  
   // MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()

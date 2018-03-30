@@ -15,7 +15,7 @@ import CoreData
 class JSONParser: NSObject {
 
   
-  lazy var  coreDataStack = TeaCoreDataStack(modelName: "Bubble_Tea_Finder")
+  lazy var coreDataStack = TeaCoreDataStack(modelName: "Bubble_Tea_Finder")
   
   
   
@@ -31,7 +31,9 @@ class JSONParser: NSObject {
       results.forEach({ coreDataStack.managedContext.delete($0) })
       
       coreDataStack.saveContext()
+      // 上面 三行 代码， 感觉是 以防万一
       importJSONSeedData()
+      //   方法 在这
     } catch let error as NSError {
       print("Error fetching: \(error), \(error.userInfo)")
     }
@@ -41,7 +43,7 @@ class JSONParser: NSObject {
   
   
   
-  
+  // https://www.bejson.com
   func importJSONSeedData() {
     let jsonURL = Bundle.main.url(forResource: "seed", withExtension: "json")!
     let jsonData = try! Data(contentsOf: jsonURL)
@@ -55,6 +57,8 @@ class JSONParser: NSObject {
       let contactDict = jsonDictionary["contact"] as! [String: String]
       
       let venuePhone = contactDict["phone"]
+      
+      //
       
       let specialsDict = jsonDictionary["specials"] as! [String: Any]
       let specialCount = specialsDict["count"] as? NSNumber
@@ -71,10 +75,16 @@ class JSONParser: NSObject {
       let distance = locationDict["distance"] as? NSNumber
       location.distance = distance!.floatValue
       
+      //
+      
       let category = Category(context: coreDataStack.managedContext)
+      
+      //
       
       let priceInfo = PriceInfo(context: coreDataStack.managedContext)
       priceInfo.priceCategory = priceDict["currency"] as? String
+      
+      //
       
       let stats = Stats(context: coreDataStack.managedContext)
       let checkins = statsDict["checkinsCount"] as? NSNumber
@@ -82,14 +92,17 @@ class JSONParser: NSObject {
       let tipCount = statsDict["tipCount"] as? NSNumber
       stats.tipCount = tipCount!.int32Value
       
+      //
+      
       let venue = Venue(context: coreDataStack.managedContext)
-      venue.name = venueName
-      venue.phone = venuePhone
-      venue.specialCount = specialCount!.int32Value
-      venue.location = location
-      venue.category = category
-      venue.priceInfo = priceInfo
-      venue.stats = stats
+      venue.name = venueName  //
+      venue.phone = venuePhone  //
+      venue.specialCount = specialCount!.int32Value  //
+      
+      venue.location = location  // relationShip
+      venue.category = category   //  relationShip
+      venue.priceInfo = priceInfo  // relationShip
+      venue.stats = stats  // relationShip
     }
     
     coreDataStack.saveContext()

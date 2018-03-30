@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1et-34-khW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -8,17 +11,17 @@
         <!--Bubble Tea!-->
         <scene sceneID="COh-6d-A7P">
             <objects>
-                <viewController id="eLH-In-evR" customClass="ViewControllerTea" customModule="Bubble_Tea_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eLH-In-evR" customClass="ViewControllerTea" customModule="Bow_Ties" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N6y-bQ-oKZ"/>
                         <viewControllerLayoutGuide type="bottom" id="kyM-ts-F9o"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NCL-kS-Rqu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zaQ-Hf-TXX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VenueCell" textLabel="Vrk-85-dFs" detailTextLabel="63G-Oa-Zn7" style="IBUITableViewCellStyleValue1" id="2z2-JL-Wd1">
@@ -78,9 +81,9 @@
         <!--Filters-->
         <scene sceneID="lgb-rf-5sF">
             <objects>
-                <tableViewController id="bzS-yC-ljp" customClass="FilterViewController" customModule="Bubble_Tea_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bzS-yC-ljp" customClass="FilterViewController" customModule="Bow_Ties" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="60" sectionHeaderHeight="10" sectionFooterHeight="10" id="Pjh-6G-tvK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
