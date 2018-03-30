@@ -137,6 +137,48 @@ Feel free to switch back and forth between the two editor styles. You might find
 
 
 
+<hr>
+
+
+
+
+## Notes Four:
+
+
+> Note: Deletion used to be one of the most "dangerous" Core Data operations. Why is this? When you remove something from Core Data you have to delete both the record on disk as well as any outstanding references in code.
+
+
+> Trying to access an NSManagedObject that had no Core Data backing store resulted in the the much-feared inaccessible fault Core Data crash.
+
+
+> Starting with iOS 9, deletion is safer than ever. Apple introduced the property shouldDeleteInaccessibleFaults on NSManagedObjectContext, which is turned on by default. This marks bad faults as deleted and treats missing data as NULL/nil/0.
+
+
+
+
+<hr>
+
+
+
+
+
+# Chapter 4: Intermediate Fetching
+
+
+* Fetch only what you need to
+* Refine your fetched results using predicates
+* Fetch in the background to avoid blocking the UI
+* Avoid unnecessary fetching by updating objects directly in the persistent store
+
+
+
+
+### NSFetchRequest: the star of the show
+
+
+
+
+
 
 <hr>
 
