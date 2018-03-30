@@ -63,6 +63,20 @@ extension ViewControllerDog {
 
   @IBAction func add(_ sender: UIBarButtonItem) {
    // walks.append(Date())
+    
+    let walk = Walk(context: managedContext)
+    walk.date = NSDate()
+    
+   /* if let dog = currentDog, let walks = dog.walks?.mutableCopy() as? NSMutableOrderedSet {
+      walks.add( walk)
+      dog.walks = walks
+      do{
+        try managedContext.save()
+      }catch let error as NSError{
+        print("Save error: \(error), description: \(error.userInfo)")
+      }
+    }*/
+    currentDog?.addToWalks(walk)
     tableView.reloadData()
   }
 }
