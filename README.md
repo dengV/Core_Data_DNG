@@ -107,13 +107,13 @@ Feel free to switch back and forth between the two editor styles. You might find
 
 
 > /* if let dog = currentDog, let walks = dog.walks?.mutableCopy() as?    NSMutableOrderedSet {
-            walks.add( walk)
-            dog.walks = walks
-            do{
-                try managedContext.save()
-            }catch let error as NSError{
-                print("Save error: \(error), description: \(error.userInfo)")
-            }
+> **            walks.add( walk)
+> **          dog.walks = walks
+> **                do{
+> **                   try managedContext.save()
+> **                }catch let error as NSError{
+> **                    print("Save error: \(error), description: \(error.userInfo)")
+> **                }
 > }*/
 
 
@@ -122,7 +122,8 @@ Feel free to switch back and forth between the two editor styles. You might find
 
 
 > currentDog?.addToWalks(walk)
-tableView.reloadData()
+
+> tableView.reloadData()
 
 ## 代码简化的， 丧心病狂， Core Data
 
@@ -141,4 +142,4 @@ tableView.reloadData()
 
 ## Git 操作 :
 
-git push git@dengV:dengV/Core_Data_DNG.git
+> git push git@dengV:dengV/Core_Data_DNG.git
